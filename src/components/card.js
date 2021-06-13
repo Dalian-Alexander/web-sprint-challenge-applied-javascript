@@ -47,6 +47,11 @@ const Card = (article) => {
   headlineDiv.textContent = article.headline
   authorCredit.textContent = 'By ' + article.authorName
 
+  //card event listener
+  card.addEventListener('click', () => {
+    console.log(article.headline + ' was clicked.')
+  })
+
   return card
 }
 
