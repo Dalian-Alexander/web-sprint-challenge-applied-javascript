@@ -1,3 +1,5 @@
+
+
 const Header = (title, date, temp) => {
   // TASK 1
   // ---------------------
@@ -37,6 +39,7 @@ const Header = (title, date, temp) => {
   return divHeader
 }
 
+
 const headerAppender = (selector) => {
   // TASK 2
   // ---------------------
@@ -47,5 +50,5 @@ const headerAppender = (selector) => {
   const attach = document.querySelector(selector)
   attach.appendChild(Header())
 }
-
+console.log(document)
 export { Header, headerAppender }
